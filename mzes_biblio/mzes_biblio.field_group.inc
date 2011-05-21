@@ -20,7 +20,7 @@ function mzes_biblio_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Administrative Metadata',
-    'weight' => '34',
+    'weight' => '7',
     'children' => array(
       0 => 'group_biblio_library_meta',
       1 => 'group_biblio_other_meta',
@@ -48,10 +48,10 @@ function mzes_biblio_field_group_info() {
     'label' => 'Library Metadata',
     'weight' => '5',
     'children' => array(
-      0 => 'field_biblio_unibib_transfer',
-      1 => 'field_biblio_call_no_other',
+      0 => 'field_biblio_call_no_other',
+      1 => 'field_biblio_note',
       2 => 'field_biblio_unibib_copy',
-      3 => 'field_biblio_note',
+      3 => 'field_biblio_unibib_transfer',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
@@ -76,11 +76,11 @@ function mzes_biblio_field_group_info() {
     'label' => 'Other Metadata',
     'weight' => '6',
     'children' => array(
-      0 => 'field_biblio_price',
-      1 => 'field_biblio_mzes_lang',
-      2 => 'field_biblio_mzes_series',
-      3 => 'field_biblio_mzes_review',
-      4 => 'field_biblio_mzes_rel_lehrst',
+      0 => 'field_biblio_mzes_lang',
+      1 => 'field_biblio_mzes_rel_lehrst',
+      2 => 'field_biblio_mzes_review',
+      3 => 'field_biblio_mzes_series',
+      4 => 'field_biblio_price',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
