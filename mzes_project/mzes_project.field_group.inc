@@ -22,9 +22,9 @@ function mzes_project_field_group_info() {
     'label' => 'Research Programs',
     'weight' => '4',
     'children' => array(
-      0 => 'field_project_program_section',
-      1 => 'field_project_program',
-      2 => 'field_project_program_prev',
+      0 => 'field_project_program',
+      1 => 'field_project_program_prev',
+      2 => 'field_project_program_section',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
