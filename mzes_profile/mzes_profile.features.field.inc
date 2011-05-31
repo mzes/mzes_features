@@ -53,7 +53,26 @@ function mzes_profile_field_default_fields() {
           'module' => 'list',
           'settings' => array(),
           'type' => 'list_default',
-          'weight' => 43,
+          'weight' => '43',
+        ),
+        'full' => array(
+          'label' => 'above',
+          'module' => 'list',
+          'settings' => array(),
+          'type' => 'list_default',
+          'weight' => '43',
+        ),
+        'profile_panel_detail' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '42',
+        ),
+        'profile_reference' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '40',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -126,7 +145,26 @@ function mzes_profile_field_default_fields() {
           'module' => 'list',
           'settings' => array(),
           'type' => 'list_default',
-          'weight' => 37,
+          'weight' => '37',
+        ),
+        'full' => array(
+          'label' => 'above',
+          'module' => 'list',
+          'settings' => array(),
+          'type' => 'list_default',
+          'weight' => '37',
+        ),
+        'profile_panel_detail' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '38',
+        ),
+        'profile_reference' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '36',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -201,7 +239,26 @@ function mzes_profile_field_default_fields() {
           'module' => 'list',
           'settings' => array(),
           'type' => 'list_default',
-          'weight' => 36,
+          'weight' => '36',
+        ),
+        'full' => array(
+          'label' => 'above',
+          'module' => 'list',
+          'settings' => array(),
+          'type' => 'list_default',
+          'weight' => '36',
+        ),
+        'profile_panel_detail' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '37',
+        ),
+        'profile_reference' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '35',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -284,7 +341,26 @@ function mzes_profile_field_default_fields() {
           'module' => 'list',
           'settings' => array(),
           'type' => 'list_default',
-          'weight' => 35,
+          'weight' => '35',
+        ),
+        'full' => array(
+          'label' => 'above',
+          'module' => 'list',
+          'settings' => array(),
+          'type' => 'list_default',
+          'weight' => '35',
+        ),
+        'profile_panel_detail' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '36',
+        ),
+        'profile_reference' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '34',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -356,7 +432,26 @@ function mzes_profile_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => 40,
+          'weight' => '40',
+        ),
+        'full' => array(
+          'label' => 'above',
+          'module' => 'text',
+          'settings' => array(),
+          'type' => 'text_default',
+          'weight' => '40',
+        ),
+        'profile_panel_detail' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '40',
+        ),
+        'profile_reference' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '38',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -425,14 +520,33 @@ function mzes_profile_field_default_fields() {
         ),
       ),
       'deleted' => '0',
-      'description' => '',
+      'description' => 'Determines whether the title is prepended or appended to the full name.',
       'display' => array(
         'default' => array(
           'label' => 'above',
           'module' => 'list',
           'settings' => array(),
           'type' => 'list_default',
-          'weight' => 47,
+          'weight' => '47',
+        ),
+        'full' => array(
+          'label' => 'above',
+          'module' => 'list',
+          'settings' => array(),
+          'type' => 'list_default',
+          'weight' => '47',
+        ),
+        'profile_panel_detail' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '44',
+        ),
+        'profile_reference' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '44',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -460,6 +574,7 @@ function mzes_profile_field_default_fields() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('Determines whether the title is prepended or appended to the full name.');
   t('External Staff');
   t('Gender');
   t('Internal Mailing List');

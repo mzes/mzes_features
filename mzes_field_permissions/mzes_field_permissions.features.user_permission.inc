@@ -222,16 +222,6 @@ function mzes_field_permissions_user_default_permissions() {
     'module' => 'field_permissions',
   );
 
-  // Exported permission: create field_project_description
-  $permissions['create field_project_description'] = array(
-    'name' => 'create field_project_description',
-    'roles' => array(
-      0 => 'administrator',
-      1 => 'web editor',
-    ),
-    'module' => 'field_permissions',
-  );
-
   // Exported permission: create field_project_geo_areas
   $permissions['create field_project_geo_areas'] = array(
     'name' => 'create field_project_geo_areas',
@@ -492,16 +482,6 @@ function mzes_field_permissions_user_default_permissions() {
       0 => 'administrator',
       1 => 'editor',
       2 => 'web editor',
-    ),
-    'module' => 'field_permissions',
-  );
-
-  // Exported permission: edit field_project_description
-  $permissions['edit field_project_description'] = array(
-    'name' => 'edit field_project_description',
-    'roles' => array(
-      0 => 'administrator',
-      1 => 'web editor',
     ),
     'module' => 'field_permissions',
   );
@@ -840,17 +820,6 @@ function mzes_field_permissions_user_default_permissions() {
       1 => 'editor',
       2 => 'staff',
       3 => 'web editor',
-    ),
-    'module' => 'field_permissions',
-  );
-
-  // Exported permission: edit own field_project_description
-  $permissions['edit own field_project_description'] = array(
-    'name' => 'edit own field_project_description',
-    'roles' => array(
-      0 => 'administrator',
-      1 => 'editor',
-      2 => 'web editor',
     ),
     'module' => 'field_permissions',
   );
