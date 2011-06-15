@@ -10,33 +10,6 @@
 function mzes_panels_displays_user_default_permissions() {
   $permissions = array();
 
-  // Exported permission: admin_display_suite
-  $permissions['admin_display_suite'] = array(
-    'name' => 'admin_display_suite',
-    'roles' => array(
-      0 => 'administrator',
-    ),
-    'module' => 'ds',
-  );
-
-  // Exported permission: admin_fields
-  $permissions['admin_fields'] = array(
-    'name' => 'admin_fields',
-    'roles' => array(
-      0 => 'administrator',
-    ),
-    'module' => 'ds',
-  );
-
-  // Exported permission: admin_view_modes
-  $permissions['admin_view_modes'] = array(
-    'name' => 'admin_view_modes',
-    'roles' => array(
-      0 => 'administrator',
-    ),
-    'module' => 'ds',
-  );
-
   // Exported permission: administer custom content
   $permissions['administer custom content'] = array(
     'name' => 'administer custom content',
@@ -155,12 +128,6 @@ function mzes_panels_displays_user_default_permissions() {
       0 => 'administrator',
     ),
     'module' => 'panels_node',
-  );
-
-  // Exported permission: use text format ds_code
-  $permissions['use text format ds_code'] = array(
-    'name' => 'use text format ds_code',
-    'roles' => array(),
   );
 
   return $permissions;

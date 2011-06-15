@@ -569,6 +569,7 @@ function mzes_panels_displays_default_panels_mini() {
     $pane->cache = array();
     $pane->style = array(
       'settings' => NULL,
+      'style' => 'block',
     );
     $pane->css = array();
     $pane->extras = array();
@@ -592,6 +593,7 @@ function mzes_panels_displays_default_panels_mini() {
     $pane->cache = array();
     $pane->style = array(
       'settings' => NULL,
+      'style' => 'default',
     );
     $pane->css = array();
     $pane->extras = array();
@@ -616,6 +618,7 @@ function mzes_panels_displays_default_panels_mini() {
     $pane->cache = array();
     $pane->style = array(
       'settings' => NULL,
+      'style' => 'block',
     );
     $pane->css = array();
     $pane->extras = array();
@@ -1329,7 +1332,7 @@ function mzes_panels_displays_default_panels_mini() {
   $display->layout_settings = array();
   $display->panel_settings = array(
     'style_settings' => array(
-      'default' => NULL,
+      'default' => array(),
       'left' => NULL,
       'right' => NULL,
       'middle' => NULL,
@@ -1337,6 +1340,7 @@ function mzes_panels_displays_default_panels_mini() {
     'middle' => array(
       'style' => '-1',
     ),
+    'style' => 'stylizer',
   );
   $display->cache = array();
   $display->title = 'Project Info';
@@ -1351,9 +1355,9 @@ function mzes_panels_displays_default_panels_mini() {
     $pane->access = array();
     $pane->configuration = array(
       'label' => 'inline',
-      'formatter' => 'date_short',
+      'formatter' => 'date_year_only',
       'formatter_settings' => array(
-        'format_type' => 'short',
+        'format_type' => 'year_only',
         'show_repeat_rule' => '',
         'multiple_number' => '',
         'multiple_from' => '',
@@ -1366,8 +1370,8 @@ function mzes_panels_displays_default_panels_mini() {
     );
     $pane->cache = array();
     $pane->style = array(
-      'settings' => NULL,
       'style' => 'naked',
+      'settings' => NULL,
     );
     $pane->css = array();
     $pane->extras = array();
@@ -1391,8 +1395,8 @@ function mzes_panels_displays_default_panels_mini() {
     );
     $pane->cache = array();
     $pane->style = array(
-      'settings' => NULL,
       'style' => 'naked',
+      'settings' => NULL,
     );
     $pane->css = array();
     $pane->extras = array();
@@ -1416,8 +1420,8 @@ function mzes_panels_displays_default_panels_mini() {
     );
     $pane->cache = array();
     $pane->style = array(
-      'settings' => NULL,
       'style' => 'naked',
+      'settings' => NULL,
     );
     $pane->css = array();
     $pane->extras = array();
@@ -1432,17 +1436,17 @@ function mzes_panels_displays_default_panels_mini() {
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'label' => 'inline',
+      'label' => 'above',
       'formatter' => 'taxonomy_term_reference_link',
       'formatter_settings' => array(),
       'context' => 'requiredcontext_entity:node_1',
-      'override_title' => 0,
-      'override_title_text' => '',
+      'override_title' => 1,
+      'override_title_text' => 'Geogr. Areas',
     );
     $pane->cache = array();
     $pane->style = array(
-      'settings' => NULL,
       'style' => 'naked',
+      'settings' => NULL,
     );
     $pane->css = array();
     $pane->extras = array();
@@ -1466,15 +1470,15 @@ function mzes_panels_displays_default_panels_mini() {
     );
     $pane->cache = array();
     $pane->style = array(
-      'settings' => NULL,
       'style' => 'naked',
+      'settings' => NULL,
     );
     $pane->css = array();
     $pane->extras = array();
     $pane->position = 4;
     $display->content['new-5'] = $pane;
     $display->panels['middle'][4] = 'new-5';
-  $display->hide_title = PANELS_TITLE_PANE;
+  $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = 'new-3';
   $mini->display = $display;
   $export['project_info'] = $mini;
@@ -1522,6 +1526,162 @@ function mzes_panels_displays_default_panels_mini() {
   $display->title_pane = '0';
   $mini->display = $display;
   $export['project_researchers'] = $mini;
+
+  $mini = new stdClass;
+  $mini->disabled = FALSE; /* Edit this to true to make a default mini disabled initially */
+  $mini->api_version = 1;
+  $mini->name = 'publications_browse_links';
+  $mini->category = '';
+  $mini->admin_title = 'Publications Browse Links';
+  $mini->admin_description = '';
+  $mini->requiredcontexts = array();
+  $mini->contexts = array();
+  $mini->relationships = array();
+  $display = new panels_display;
+  $display->layout = 'onecol';
+  $display->layout_settings = array();
+  $display->panel_settings = array(
+    'style_settings' => array(
+      'default' => array(),
+      'middle' => NULL,
+    ),
+    'style' => 'rounded_corners',
+    'middle' => array(
+      'style' => '-1',
+    ),
+  );
+  $display->cache = array();
+  $display->title = '';
+  $display->content = array();
+  $display->panels = array();
+    $pane = new stdClass;
+    $pane->pid = 'new-1';
+    $pane->panel = 'middle';
+    $pane->type = 'views_panes';
+    $pane->subtype = 'publications_panes-publications_browse_by_type_pane';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'link_to_view' => 0,
+      'more_link' => 0,
+      'use_pager' => 0,
+      'pager_id' => '',
+      'items_per_page' => '0',
+      'offset' => '0',
+      'path' => 'publications/type',
+      'fields_override' => array(
+        'citation' => 0,
+      ),
+      'override_title' => 1,
+      'override_title_text' => 'Filter by Type',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'style' => 'default',
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $display->content['new-1'] = $pane;
+    $display->panels['middle'][0] = 'new-1';
+    $pane = new stdClass;
+    $pane->pid = 'new-2';
+    $pane->panel = 'middle';
+    $pane->type = 'views_panes';
+    $pane->subtype = 'publications_panes-publications_browse_by_year_pane';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'link_to_view' => 0,
+      'more_link' => 0,
+      'use_pager' => 0,
+      'pager_id' => '',
+      'items_per_page' => '0',
+      'offset' => '0',
+      'path' => 'publications/year',
+      'fields_override' => array(
+        'citation' => 1,
+      ),
+      'override_title' => 1,
+      'override_title_text' => 'Filter by Year',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'style' => 'default',
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 1;
+    $display->content['new-2'] = $pane;
+    $display->panels['middle'][1] = 'new-2';
+    $pane = new stdClass;
+    $pane->pid = 'new-3';
+    $pane->panel = 'middle';
+    $pane->type = 'views_panes';
+    $pane->subtype = 'publications_panes-publications_browse_by_author_pane';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'link_to_view' => 0,
+      'more_link' => 0,
+      'use_pager' => 0,
+      'pager_id' => '',
+      'items_per_page' => '0',
+      'offset' => '0',
+      'path' => 'publications/author',
+      'fields_override' => array(
+        'citation' => 0,
+      ),
+      'override_title' => 1,
+      'override_title_text' => 'Filter by Author',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'style' => 'default',
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 2;
+    $display->content['new-3'] = $pane;
+    $display->panels['middle'][2] = 'new-3';
+    $pane = new stdClass;
+    $pane->pid = 'new-4';
+    $pane->panel = 'middle';
+    $pane->type = 'views_panes';
+    $pane->subtype = 'publications_panes-publications_browse_by_title_pane';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'link_to_view' => 0,
+      'more_link' => 0,
+      'use_pager' => 0,
+      'pager_id' => '',
+      'items_per_page' => '0',
+      'offset' => '0',
+      'path' => 'publications/title',
+      'fields_override' => array(
+        'citation' => 0,
+      ),
+      'override_title' => 1,
+      'override_title_text' => 'Filter by Title',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'style' => 'default',
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 3;
+    $display->content['new-4'] = $pane;
+    $display->panels['middle'][3] = 'new-4';
+  $display->hide_title = PANELS_TITLE_FIXED;
+  $display->title_pane = 'new-1';
+  $mini->display = $display;
+  $export['publications_browse_links'] = $mini;
 
   return $export;
 }

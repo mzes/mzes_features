@@ -180,16 +180,6 @@ function mzes_field_permissions_user_default_permissions() {
     'module' => 'field_permissions',
   );
 
-  // Exported permission: create field_profile_titles_rendering
-  $permissions['create field_profile_titles_rendering'] = array(
-    'name' => 'create field_profile_titles_rendering',
-    'roles' => array(
-      0 => 'administrator',
-      1 => 'web editor',
-    ),
-    'module' => 'field_permissions',
-  );
-
   // Exported permission: create field_profile_user
   $permissions['create field_profile_user'] = array(
     'name' => 'create field_profile_user',
@@ -434,17 +424,6 @@ function mzes_field_permissions_user_default_permissions() {
   // Exported permission: edit field_profile_staff_status
   $permissions['edit field_profile_staff_status'] = array(
     'name' => 'edit field_profile_staff_status',
-    'roles' => array(
-      0 => 'administrator',
-      1 => 'editor',
-      2 => 'web editor',
-    ),
-    'module' => 'field_permissions',
-  );
-
-  // Exported permission: edit field_profile_titles_rendering
-  $permissions['edit field_profile_titles_rendering'] = array(
-    'name' => 'edit field_profile_titles_rendering',
     'roles' => array(
       0 => 'administrator',
       1 => 'editor',
@@ -778,17 +757,6 @@ function mzes_field_permissions_user_default_permissions() {
     'module' => 'field_permissions',
   );
 
-  // Exported permission: edit own field_profile_titles_rendering
-  $permissions['edit own field_profile_titles_rendering'] = array(
-    'name' => 'edit own field_profile_titles_rendering',
-    'roles' => array(
-      0 => 'administrator',
-      1 => 'editor',
-      2 => 'web editor',
-    ),
-    'module' => 'field_permissions',
-  );
-
   // Exported permission: edit own field_profile_user
   $permissions['edit own field_profile_user'] = array(
     'name' => 'edit own field_profile_user',
@@ -1048,17 +1016,6 @@ function mzes_field_permissions_user_default_permissions() {
     'module' => 'field_permissions',
   );
 
-  // Exported permission: view field_profile_titles_rendering
-  $permissions['view field_profile_titles_rendering'] = array(
-    'name' => 'view field_profile_titles_rendering',
-    'roles' => array(
-      0 => 'administrator',
-      1 => 'editor',
-      2 => 'web editor',
-    ),
-    'module' => 'field_permissions',
-  );
-
   // Exported permission: view field_profile_user
   $permissions['view field_profile_user'] = array(
     'name' => 'view field_profile_user',
@@ -1238,17 +1195,6 @@ function mzes_field_permissions_user_default_permissions() {
   // Exported permission: view own field_profile_staff_status
   $permissions['view own field_profile_staff_status'] = array(
     'name' => 'view own field_profile_staff_status',
-    'roles' => array(
-      0 => 'administrator',
-      1 => 'editor',
-      2 => 'web editor',
-    ),
-    'module' => 'field_permissions',
-  );
-
-  // Exported permission: view own field_profile_titles_rendering
-  $permissions['view own field_profile_titles_rendering'] = array(
-    'name' => 'view own field_profile_titles_rendering',
     'roles' => array(
       0 => 'administrator',
       1 => 'editor',

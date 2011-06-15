@@ -78,7 +78,7 @@ function mzes_profile_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => '21',
         ),
       ),
       'entity_type' => 'node',
@@ -170,7 +170,7 @@ function mzes_profile_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => '17',
         ),
       ),
       'entity_type' => 'node',
@@ -264,7 +264,7 @@ function mzes_profile_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => '18',
         ),
       ),
       'entity_type' => 'node',
@@ -290,7 +290,7 @@ function mzes_profile_field_default_fields() {
   $fields['node-profile-field_profile_staff_position'] = array(
     'field_config' => array(
       'active' => '1',
-      'cardinality' => '1',
+      'cardinality' => '-1',
       'deleted' => '0',
       'entity_types' => array(),
       'field_name' => 'field_profile_staff_position',
@@ -366,7 +366,7 @@ function mzes_profile_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => '19',
         ),
       ),
       'entity_type' => 'node',
@@ -457,7 +457,7 @@ function mzes_profile_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => 0,
+          'weight' => '20',
         ),
       ),
       'entity_type' => 'node',
@@ -480,107 +480,13 @@ function mzes_profile_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-profile-field_profile_titles_rendering'
-  $fields['node-profile-field_profile_titles_rendering'] = array(
-    'field_config' => array(
-      'active' => '1',
-      'cardinality' => '1',
-      'deleted' => '0',
-      'entity_types' => array(),
-      'field_name' => 'field_profile_titles_rendering',
-      'foreign keys' => array(),
-      'indexes' => array(
-        'value' => array(
-          0 => 'value',
-        ),
-      ),
-      'module' => 'list',
-      'settings' => array(
-        'allowed_values' => array(
-          1 => 'prepend',
-          2 => 'append',
-        ),
-        'allowed_values_function' => '',
-        'field_permissions' => array(
-          'create' => 'create',
-          'edit' => 'edit',
-          'edit own' => 'edit own',
-          'view' => 'view',
-          'view own' => 'view own',
-        ),
-      ),
-      'translatable' => '1',
-      'type' => 'list_integer',
-    ),
-    'field_instance' => array(
-      'bundle' => 'profile',
-      'default_value' => array(
-        0 => array(
-          'value' => '1',
-        ),
-      ),
-      'deleted' => '0',
-      'description' => 'Determines whether the title is prepended or appended to the full name.',
-      'display' => array(
-        'default' => array(
-          'label' => 'above',
-          'module' => 'list',
-          'settings' => array(),
-          'type' => 'list_default',
-          'weight' => '47',
-        ),
-        'full' => array(
-          'label' => 'above',
-          'module' => 'list',
-          'settings' => array(),
-          'type' => 'list_default',
-          'weight' => '47',
-        ),
-        'profile_panel_detail' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => '44',
-        ),
-        'profile_reference' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => '44',
-        ),
-        'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-      ),
-      'entity_type' => 'node',
-      'field_name' => 'field_profile_titles_rendering',
-      'label' => 'Titles Rendering',
-      'required' => 0,
-      'settings' => array(
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 1,
-        'module' => 'options',
-        'settings' => array(),
-        'type' => 'options_select',
-        'weight' => '8',
-      ),
-    ),
-  );
-
   // Translatables
   // Included for use with string extractors like potx.
-  t('Determines whether the title is prepended or appended to the full name.');
   t('External Staff');
   t('Gender');
   t('Internal Mailing List');
   t('Position');
   t('Staff Record No.');
-  t('Titles Rendering');
 
   return $fields;
 }
