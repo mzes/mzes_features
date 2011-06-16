@@ -19,6 +19,18 @@ function mzes_field_permissions_user_default_permissions() {
     'module' => 'field_permissions',
   );
 
+  // Exported permission: create body
+  $permissions['create body'] = array(
+    'name' => 'create body',
+    'roles' => array(
+      0 => 'administrator',
+      1 => 'editor',
+      2 => 'staff',
+      3 => 'web editor',
+    ),
+    'module' => 'field_permissions',
+  );
+
   // Exported permission: create field_biblio_call_no_other
   $permissions['create field_biblio_call_no_other'] = array(
     'name' => 'create field_biblio_call_no_other',
@@ -252,6 +264,16 @@ function mzes_field_permissions_user_default_permissions() {
       0 => 'administrator',
       1 => 'editor',
       2 => 'web editor',
+    ),
+    'module' => 'field_permissions',
+  );
+
+  // Exported permission: edit body
+  $permissions['edit body'] = array(
+    'name' => 'edit body',
+    'roles' => array(
+      0 => 'administrator',
+      1 => 'web editor',
     ),
     'module' => 'field_permissions',
   );
@@ -840,6 +862,17 @@ function mzes_field_permissions_user_default_permissions() {
     'module' => 'field_permissions',
   );
 
+  // Exported permission: view body
+  $permissions['view body'] = array(
+    'name' => 'view body',
+    'roles' => array(
+      0 => 'administrator',
+      1 => 'anonymous user',
+      2 => 'authenticated user',
+    ),
+    'module' => 'field_permissions',
+  );
+
   // Exported permission: view field_biblio_call_no_other
   $permissions['view field_biblio_call_no_other'] = array(
     'name' => 'view field_biblio_call_no_other',
@@ -1023,6 +1056,18 @@ function mzes_field_permissions_user_default_permissions() {
       0 => 'administrator',
       1 => 'editor',
       2 => 'web editor',
+    ),
+    'module' => 'field_permissions',
+  );
+
+  // Exported permission: view own body
+  $permissions['view own body'] = array(
+    'name' => 'view own body',
+    'roles' => array(
+      0 => 'administrator',
+      1 => 'editor',
+      2 => 'staff',
+      3 => 'web editor',
     ),
     'module' => 'field_permissions',
   );
