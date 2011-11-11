@@ -178,7 +178,7 @@ function mzes_project_field_default_fields() {
           'size' => '60',
         ),
         'type' => 'text_textfield',
-        'weight' => '15',
+        'weight' => '16',
       ),
     ),
   );
@@ -316,7 +316,7 @@ function mzes_project_field_default_fields() {
         'module' => 'number',
         'settings' => array(),
         'type' => 'number',
-        'weight' => '16',
+        'weight' => '18',
       ),
     ),
   );
@@ -409,7 +409,7 @@ function mzes_project_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'options_select',
-        'weight' => '7',
+        'weight' => '11',
       ),
     ),
   );
@@ -502,7 +502,7 @@ function mzes_project_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'node_reference_autocomplete',
-        'weight' => '9',
+        'weight' => '13',
       ),
     ),
   );
@@ -595,7 +595,7 @@ function mzes_project_field_default_fields() {
           'size' => '60',
         ),
         'type' => 'node_reference_autocomplete',
-        'weight' => '8',
+        'weight' => '12',
       ),
     ),
   );
@@ -688,7 +688,7 @@ function mzes_project_field_default_fields() {
           'size' => '60',
         ),
         'type' => 'node_reference_autocomplete',
-        'weight' => '6',
+        'weight' => '5',
       ),
     ),
   );
