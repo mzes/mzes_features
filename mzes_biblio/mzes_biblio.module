@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the MZES Biblio feature.
- */
-
-include_once('mzes_biblio.features.inc');
